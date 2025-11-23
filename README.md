@@ -9,6 +9,35 @@ Tech i used
 Python
 scikit learn for the small ML model
 Any SMS API(like Fast2SMS)
+How to run
+clone the project
+Install the reqired python modules
+Run the main file
+That's it no complicated setup.
+Main code Example
+Here is a short sample of how the system works.
+```python
+from sos import send_sos
+from location import get_location
+from safety import check_safety
+
+def main():
+    print("opening Women Safety System...\n")
+    location = get_location()
+    print ("Your Location:", location)
+
+    safety_status =
+  check_safety(crime_score=7)
+    print("Safety Status:", safety_status)
+
+    send_sos("9876543210", location)
+    print("sos alert has been sent successfully!")
+
+if__name__ == "__main_":
+```
+
+
+
 Why i chose this project
 women's safey is something that affects almost everyone we know,directly or indirectly.I wanted to build something that at least tries to solve a small part of this bigger problem.
 Even if this system is simple,the idea is meaningful.
